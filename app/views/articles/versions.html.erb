@@ -1,0 +1,9 @@
+<h2><%= @article.title %> - Versions</h2>
+
+<ul>
+<% @versions.each do |version| %>
+	<li><%= link_to version.updated_at, article_url(@article, :version => version.version) %></li>
+<% end %>
+</ul>
+
+<%= link_to 'Back', articles_path %>

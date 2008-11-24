@@ -1,0 +1,15 @@
+<h2><%= @article.title %></h2>
+
+<%= @article.html %>
+
+<% if @revert_link -%>
+  <%= link_to 'Revert to this version', @revert_link, :confirm => "Sure?", :method => :post %> |
+<% else %>
+  <%= link_to 'Edit', edit_article_path(@article) %> |
+<% end %>
+
+<% if params[:version] %>
+  <%= link_to 'Back', versions_article_path(@article.title) %>
+<% else %>
+  <%= link_to 'Back', articles_path %>
+<% end %>
