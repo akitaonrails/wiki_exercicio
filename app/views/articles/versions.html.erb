@@ -3,7 +3,7 @@
 <ul>
 <% @versions.each do |rev| -%>
 <li><%= link_to rev.updated_at, 
-	article_url(@article, :version => rev.id) %></li>
+	article_url(@article, :version => rev.version) %></li>
 <% end -%>
 </ul>
 
