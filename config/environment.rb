@@ -27,6 +27,7 @@ Rails::Initializer.run do |config|
   # config.gem "hpricot", :version => '0.6', :source => "http://code.whytheluckystiff.net"
   # config.gem "sqlite3-ruby", :lib => "sqlite3"
   # config.gem "aws-s3", :lib => "aws/s3"
+  config.gem "RedCloth", :lib => "redcloth", :source => "http://code.whytheluckystiff.net"
 
   # Only load the plugins named here, in the order given. By default, all plugins 
   # in vendor/plugins are loaded in alphabetical order.
@@ -56,7 +57,7 @@ Rails::Initializer.run do |config|
   # no regular words or you'll be exposed to dictionary attacks.
   config.action_controller.session = {
     :session_key => '_wiki_session',
-    :secret      => '44a9a839724850511f4d759578f15477a60bf61ce98d9b8130ce5b3d2f439b8330d8501730ff458cfc0c2f65dbc84926abc4ba3e24eb8a5015cb5c5ce36727d6'
+    :secret      => 'dced9dc3cd81dafd53f09bf6a4dd4b47470c019b740f598805621af1708734bf5a847719c4c790d81e03be91171c7e11563d9a888ebf19683406b50df8ce1961'
   }
 
   # Use the database for sessions instead of the cookie-based default,

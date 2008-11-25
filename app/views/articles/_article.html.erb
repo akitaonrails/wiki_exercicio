@@ -1,6 +1,5 @@
 <% form_for(@article) do |f| %>
   <%= f.error_messages %>
-
   <p>
     <%= f.label :title %><br />
     <%= f.text_field :title %>
@@ -9,8 +8,5 @@
     <%= f.label :body %><br />
     <%= f.text_area :body %>
   </p>
-
-  <p>
-    <%= f.submit "Update" %>
-  </p>
+  <p><%= f.submit "Update" %></p>
 <% end %>
