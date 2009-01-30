@@ -27,6 +27,7 @@ Rails::Initializer.run do |config|
   # config.gem "hpricot", :version => '0.6', :source => "http://code.whytheluckystiff.net"
   # config.gem "sqlite3-ruby", :lib => "sqlite3"
   # config.gem "aws-s3", :lib => "aws/s3"
+  config.gem 'metaskills-acts_as_versioned', :lib => 'acts_as_versioned', :source => 'http://gems.github.com/'
   config.gem "RedCloth", :lib => "redcloth", :source => "http://code.whytheluckystiff.net"
 
   # Only load the plugins named here, in the order given. By default, all plugins 
@@ -49,15 +50,15 @@ Rails::Initializer.run do |config|
   # The internationalization framework can be changed to have another default locale (standard is :en) or more load paths.
   # All files from config/locales/*.rb,yml are added automatically.
   # config.i18n.load_path << Dir[File.join(RAILS_ROOT, 'my', 'locales', '*.{rb,yml}')]
-  # config.i18n.default_locale = :de
+  config.i18n.default_locale = :'pt-BR'
 
   # Your secret key for verifying cookie session data integrity.
   # If you change this key, all old sessions will become invalid!
   # Make sure the secret is at least 30 characters and all random, 
   # no regular words or you'll be exposed to dictionary attacks.
   config.action_controller.session = {
-    :session_key => '_wiki_session',
-    :secret      => 'dced9dc3cd81dafd53f09bf6a4dd4b47470c019b740f598805621af1708734bf5a847719c4c790d81e03be91171c7e11563d9a888ebf19683406b50df8ce1961'
+    :session_key => '_mini-wiki_session',
+    :secret      => 'e48471d806ed692f303cdd6754a0d1ce151706fe614811c2264ab14ceb6bad1b2e14b3aa811d032c59beba8e47e539de70f91ba804192dcd0fc16dcb57735b9b'
   }
 
   # Use the database for sessions instead of the cookie-based default,

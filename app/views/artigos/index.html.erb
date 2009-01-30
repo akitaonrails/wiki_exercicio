@@ -1,0 +1,16 @@
+<h1>Listando artigos</h1>
+
+<ul>
+<% @artigos.each do |artigo| %>
+<li><%= link_to artigo.titulo, artigo %> 
+	<small>(
+	<%= link_to 'editar', edit_artigo_path(artigo) %> |
+	<%= link_to 'apagar', artigo, :confirm => 'Certeza?', :method => :delete %>
+	<% if artigo.versions.size > 1 -%>
+	| <%= link_to 'versões', versoes_artigo_path(artigo) %>
+	<% end -%>
+	)</small></li>
+<% end %>
+</ul>
+
+<%= link_to 'Novo artigo', new_artigo_path %>

@@ -1,4 +1,4 @@
-#!/opt/ruby-enterprise-1.8.6-20080810/bin/ruby
+#!/opt/ruby-enterprise-1.8.6-20090113/bin/ruby
 #
 # You may specify the path to the FastCGI crash log (a log of unhandled
 # exceptions which forced the FastCGI instance to exit, great for debugging)

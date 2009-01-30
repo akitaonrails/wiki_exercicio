@@ -1,0 +1,9 @@
+<h2><%= @artigo.titulo %> - Lista de Versões</h2>
+
+<ul>
+<% @versoes.each do |rev| -%>
+<li><%= link_to rev.updated_at, artigo_url(@artigo, :versao => rev.version) %></li>
+<% end -%>
+</ul>
+
+<%= link_to 'Voltar', artigos_path %>

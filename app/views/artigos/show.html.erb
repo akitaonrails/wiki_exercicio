@@ -1,0 +1,6 @@
+<h2><%= @artigo.titulo %> <% if params[:versao] %>- versão: <%= params[:versao] %><% end %></h2>
+
+<%= @artigo.conteudo_html %>
+
+<%= reverter_link(@artigo, @reverter_link) %>
+<%= link_voltar(@artigo, params[:versao]) %>

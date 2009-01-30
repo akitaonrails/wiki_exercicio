@@ -1,5 +1,5 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :articles, 
-    :member => { :versions => :get, :revert => :post }
-  map.root :controller => 'articles'
+  map.resources :artigos,
+    :member => { :versoes => :get, :reverter => :post }
+  map.root :controller => 'artigos'
 end

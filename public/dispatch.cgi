@@ -1,4 +1,4 @@
-#!/opt/ruby-enterprise-1.8.6-20080810/bin/ruby
+#!/opt/ruby-enterprise-1.8.6-20090113/bin/ruby
 
 require File.dirname(__FILE__) + "/../config/environment" unless defined?(RAILS_ROOT)
 

@@ -1,0 +1,16 @@
+<% form_for(@artigo) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :titulo %><br />
+    <%= f.text_field :titulo %>
+  </p>
+  <p>
+    <%= f.label :conteudo %><br />
+    <%= f.text_area :conteudo %>
+  </p>
+
+  <p>
+    <%= f.submit "Gravar" %>
+  </p>
+<% end %>
