@@ -5,8 +5,7 @@ class Artigo < ActiveRecord::Base
   
   validates_presence_of :titulo
   validates_presence_of :conteudo
-  validates_format_of :titulo, :with => /^[a-z|A-Z|0-9]+$/, 
-    :message => "não pode conter espaços em branco"
+  validates_format_of :titulo, :with => /^[a-z|A-Z|0-9]+$/, :message => "não pode conter espaços em branco"
     
   before_save :converter_markdown
   before_save :converter_links
